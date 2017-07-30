@@ -1,0 +1,34 @@
+<!DOCTYPE html><!--to do: responsiveness, filters-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <title>Upstate New York Vacation Map </title>
+</head>
+<body>
+    <ul data-bind="foreach: locationList">
+        <li data-bind="text: name, click: $parent.setLocation"></li>
+    </ul>
+      <h5 id="welcome">welcome to my page</h5>
+      <div data-bind="with: currentLocation">
+        <h2 data-bind="visible: name !== undefined, text: name"></h2>
+        <h5 data-bind="visible: address !== undefined, text: address"></h5>
+    </div>
+    <div id="map"></div>
+    <div class="nytimes-container">
+        <h3 id="nytimes-header">Select locations from the list above to view related NYT articles</h3>
+        <ul id="nytimes-articles" class="article-list"></ul>
+    </div> 
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDjQl0cfWytE2iJQxDZuhWhFCmQSheBdno&callback=initMap" onerror="mapError()">
+    </script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/knockout-3.2.0.js"></script>
+    <script src="script/app.js"></script>
+    
+    
+</body>
+</html>
