@@ -81,7 +81,7 @@ var Location = function(data){
         title: data.name
         });
     this.infoWindow = new google.maps.InfoWindow({
-        content: '<img border="0" align="center" width="250" src="' + data.imgSrc + '">'
+        content: '<img border="0" align="center" width="250" src=data.imgSrc>'
         });
 };
 
