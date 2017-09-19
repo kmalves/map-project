@@ -17,7 +17,7 @@ var locations = [
         name: 'Medina KOA Campsite',
         latitude: 43.2805,
         longitude: -78.4557,
-        imgSrc: 'images/campsite.JPG',
+        imgSrc: '/images/campsite.JPG',
         address: '2711 County Line Road, Medina, NY',
         category: 'recreational',
     },
