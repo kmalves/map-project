@@ -1,4 +1,4 @@
-Vacation Map is a one page application displaying a map of six locations from our recent camping trip to Upsate New York. It was built using HTML, CSS, Bootstrap, JS, Knockout, Googple Maps and NYT API. After clicking on each location an image will apper in the info window and the address is displayed in the right top corner. Locations can be filtered by categories.
+Vacation Map is a one page application displaying a map of six locations from our recent camping trip to Upsate New York. It was built using HTML, CSS, Bootstrap, JS, Knockout, Googple Maps and NYT API. After clicking on each location an image will appear in the info window and the address is displayed in the right top corner. Locations can be filtered by categories.
 
 TO RUN THE CODE:
 
