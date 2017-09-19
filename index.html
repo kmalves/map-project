@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <title>Upstate New York Vacation Map </title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row title">
+            <h3 class="col-xs-12 text-center text-uppercase">upsate new york road trip 2017</h3>
+        </header>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 text-left form-group">
+                <label>Filter by:</label>
+                <select data-bind="options: categories,
+                                   optionsText: 'name',
+                                   optionsValue: 'name',
+                                   value: selectedChoice" class="form-control">
+                </select>
+                <input type="button" class="btn btn-light" data-bind="click: setCategory, enable: selectedChoice" value="Choose">
+                <br>
+                <!--location list/navigation menu-->
+                <ul class="text-uppercase nav" data-bind="foreach: locationList">
+                    <li data-bind="visible: visibility, text: name, click: $parent.setLocation, attr: {id: $index }"></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 text-center">    
+                <h5 class="text-uppercase nav_active" id="welcome">welcome to the map of our ustate new yourk adventures!</h5>
+                <div id="info" data-bind="with: currentLocation">
+                <h3 data-bind="visible: name !== undefined, text: name"></h3>
+                <h5 data-bind="visible: address !== undefined, text: address"></h5></div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="map" class="col-xs-12"></div>
+        </div>
+        <div class="row nyt">
+            <h5 class="text-uppercase text-center" id="nytimes-header">Select locations from the list above to view related NYT articles</h5>
+        </div>
+        <br>
+        <div class="row">  
+            <div class="nytimes-container col-xs-12">
+                <ul id="nytimes-articles" class="article-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/knockout-3.2.0.js"></script>
+    <script src="script/app.js"></script>
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDjQl0cfWytE2iJQxDZuhWhFCmQSheBdno&callback=initMap" onerror="mapError()">
+    </script>
+</body>
+</html>
