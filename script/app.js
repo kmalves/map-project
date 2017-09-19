@@ -25,7 +25,7 @@ var locations = [
         name: "Fisher's Farm Market",
         latitude: 43.2671,
         longitude: -78.3898,
-        imgSrc: 'images/farm.jpg',
+        imgSrc: 'images/farm.JPG',
         address: '11352 Ridge Road, Medina, NY',
         category: 'recreational',
     },
@@ -33,7 +33,7 @@ var locations = [
         name: "Niagara Falls State Park",
         latitude: 43.0870,
         longitude: -79.0679,
-        imgSrc: 'images/niagara.jpg',
+        imgSrc: 'images/niagara.JPG',
         address: '332 Prospect Street, Niagara Falls, NY',
         category: 'sightseeing',
 
@@ -42,7 +42,7 @@ var locations = [
         name: 'Lockport Caves and Underground Boat Ride',
         latitude: 43.1719,
         longitude: -78.6926,
-        imgSrc: 'images/lockport.jpg',
+        imgSrc: 'images/lockport.JPG',
         address: '5 Gooding St, Lockport, NY',
         category: 'educational'
     },
@@ -50,7 +50,7 @@ var locations = [
         name: 'Hamlin Beach Lake Ontario',
         latitude: 43.3597,
         longitude: -77.9488,
-        imgSrc: 'images/ontario.jpg ',
+        imgSrc: 'images/ontario.JPG',
         address: '1 Hamlin Beach State Park, Hamlin, NY',
         category: 'sightseeing'
     },
@@ -58,7 +58,7 @@ var locations = [
         name: "Devil's Hole State Park",
         latitude: 43.1344,
         longitude: -79.0463,
-        imgSrc: 'images/hole.jpg',
+        imgSrc: 'images/hole.JPG',
         address: 'Robert Moses Parkway, Niagara Falls, NY',
         category: 'sightseeing'
     }
